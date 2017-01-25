@@ -208,9 +208,9 @@ function initProducts(){
 function getServerRequest(filter) {
 	var xhr = new XMLHttpRequest();
 
-	//xhr.open("GET", "https://assn4-400a.herokuapp.com/products", true);
+	xhr.open("GET", "https://assn4-400a.herokuapp.com/products", true);
 
-	xhr.open("GET", "http://localhost:1337/api/products/" + filter, true);
+	//xhr.open("GET", "http://localhost:1337/api/products/" + filter, true);
 	xhr.timeout = 1000;
 
 	xhr.onload = function() {
