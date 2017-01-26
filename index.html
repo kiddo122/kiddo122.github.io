@@ -1,252 +1,368 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Assignment 4</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body onload>
-    <div id="header">
-        <div id="logo">
-            Bookstore
-        </div>
-        <div id="welcomeBanner">
-            Welcome to the UBC Bookstore!
-        </div>
-        <button id = "showCart" align = "right" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Cart
-        </button>
-    </div>
 
-    <div id="mainContent">
-        <div id="navigationMenu">
-            <ul id="sidebarlist">
-                <li>All Items</li>
-                <li>Books</li>
-                <li>Clothing</li>
-                <li>Tech</li>
-                <li>Gifts</li>
-                <li>Stationary</li>
-                <li>Supplies</li>
-                <li>
-                  Filter Prices ($):
-                  <input type="text" id="filterValue" value= "0">
-                  <button type="submit" id="submitFilter" onclick="initPage()"> Filter</button>
-                </li>
-            </ul>
-        </div>
-        <div id="productList">
-            <ul>
-                <li id="listBox1">
-                    <image class="product" src="images/Box1_$10.png" />
-                    <div class="price" id="Box1price">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Box1')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Box1" onclick="removeFromCart('Box1')">
-                        Remove
-                    </button>
-                    <div class="name">Box1</div>
-                </li>
-                <li id="listBox2">
-                    <image class="product" src="images/Box2_$5.png" />
-                    <div class="price" id="Box2price">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Box2')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Box2" onclick="removeFromCart('Box2')">
-                        Remove
-                    </button>
-                    <div class="name">Box2</div>
-                </li>
-                <li id="listClothes1">
-                    <image class="product" src="images/Clothes1_$20.png" />
-                    <div class="price" id="Clothes1price">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Clothes1')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Clothes1" onclick="removeFromCart('Clothes1')">
-                        Remove
-                    </button>
-                    <div class="name">Clothes1</div>
-                </li>
-                <li id="listClothes2">
-                    <image class="product" src="images/Clothes2_$30.png" />
-                    <div class="price" id="Clothes2price">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Clothes2')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Clothes2" onclick="removeFromCart('Clothes2')">
-                        Remove
-                    </button>
-                    <div class="name">Clothes2</div>
-                </li>
-                <li id="listJeans">
-                    <image class="product" src="images/Jeans_$50.png" />
-                    <div class="price" id="Jeansprice" >
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Jeans')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Jeans" onclick="removeFromCart('Jeans')">
-                        Remove
-                    </button>
-                    <div class="name">Jeans</div>
-                </li>
-                <li id="listKeyboard">
-                    <image class="product" src="images/Keyboard_$20.png" />
-                    <div class="price" id="Keyboardprice">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Keyboard')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Keyboard" onclick="removeFromCart('Keyboard')">
-                        Remove
-                    </button>
-                    <div class="name">Keyboard</div>
-                </li>
-                <li id="listKeyboardCombo">
-                    <image class="product" src="images/KeyboardCombo_$40.png" />
-                    <div class="price" id="KeyboardComboprice">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('KeyboardCombo')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="KeyboardCombo" onclick="removeFromCart('KeyboardCombo')">
-                        Remove
-                    </button>
-                    <div class="name">KeyboardCombo</div>
-                </li>
-                <li id="listMice">
-                    <image class="product" src="images/Mice_$20.png" />
-                    <div class="price" id="Miceprice">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Mice')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Mice" onclick="removeFromCart('Mice')">
-                        Remove
-                    </button>
-                    <div class="name">Mice</div>
-                </li>
-                <li id="listPC1">
-                    <image class="product" src="images/PC1_$350.png" />
-                    <div class="price" id="PC1price">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('PC1')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="PC1" onclick="removeFromCart('PC1')">
-                        Remove
-                    </button>
-                    <div class="name">PC1</div>
-                </li>
-                <li id="listPC2">
-                    <image class="product" src="images/PC2_$400.png" />
-                    <div class="price" id="PC2price">
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('PC2')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="PC2" onclick="removeFromCart('PC2')">
-                        Remove
-                    </button>
-                    <div class="name">PC2</div>
-                </li>
-                <li id="listPC3">
-                    <image class="product" src="images/PC3_$300.png" />
-                    <div class="price" id="PC3price" >
-                        
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('PC3')">
-                        Add</button>
-                    <button class="removeCart" id="PC3"onclick="removeFromCart('PC3')">
-                        Remove
-                    </button>
-                    <div class="name">PC3</div>
-                </li>
-                <li id="listTent">
-                    <image class="product" src="images/Tent_$100.png" />
-                    <div class="price" id="Tentprice">
+<html class="" lang="en">
 
-                    </div>
-                    <div class="priceShade" /> </div>    
-                    <image class="cartImg" src="images/cart.png" />     
-                    <button class="addCart" onclick="addToCart('Tent')">
-                        Add
-                    </button>
-                    <button class="removeCart" id="Tent" onclick="removeFromCart('Tent')">
-                        Remove
-                    </button>
-                    <div class="name">Tent</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Cart:</h4>
-      </div>
-      <div class="modal-body">
-        <p>This is what you have in your cart:</p>
-        <table id = "cartTable" style="width:100%">
-        </table>
-      </div>
-      <div class="modal-footer">
-        <p id = "modalTotalPrice"> Total Price </p>
-        <button type="button" id="checkOut" class="btn btn-primary" onclick="checkOut()">CheckOut</button>
-      </div>
-    </div>
-  </div>
-</div>
+<head>
     
-    <div id="footer">
-        Project by Daniel Kim and Kaibo Ma  
-        <span id="timeoutValue">300</span>
+    <title>Kaibo Ma - An Introduction</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <meta name="description" content="The portfolio of Kaibo Ma, a Computer Engineer attending University of British Columbia." />
+    <meta name="keywords" content="kaibo, ma, kaibo ma, portfolio, resume, websites, computer, security, developer" />
+    <meta name="robots" content="index, follow" />
+    
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="">
+  
+  
+  
+  
+
+<section id="top">
+
+        <header id="home-top" class="nav-top nav-fixed nav-root">
+        
+            <div class="container">
+            
+                <div class="row">
+                
+                    <div class="col-md-4 col-xs-4">
+    
+                        <h1 id="header-logo">
+                        
+                            <a href="/">
+                                <span class="mask"></span>
+
+                                <span class="behind"><img id="avatar" src="images/avatar.png"></span>
+                            </a>
+                            
+                        </h1>
+                        
+                    </div>
+                    
+                    <div class="col-md-8 col-xs-8">
+                    
+                        <nav id="top-nav">
+                        
+                            <ul class="nav-list transistion">
+                            
+                                    <li><a id="about" href="http://kiddo122.github.io/">About</a></li>
+                                    <li><a id="work" href="http://kiddo122.github.io/work">Work</a></li>
+                                    <li><a id="projects" href="http://kiddo122.github.io/projects">Projects</a></li>
+                                                                                    
+                            </ul>
+                        
+                        </nav>
+                    
+                    </div> <!-- 12 -->
+                
+                </div> <!-- / row -->
+                        
+            </div> <!--/ container -->
+        
+        
+        </header><div class="masthead-wrap">
+        
+            <div id="title">
+            
+                
+            
+                <div class="container">
+
+                    <div class="row">
+                    
+                        <div class="col-md-12">
+                        
+                        
+                            <div id="head-slider" class="transistion">
+                            
+                                <div class="slide-contents">
+                                
+                                    <div class="slide">
+                                    
+                                        <h2 class="im-kaibo">
+
+                                               <p class="header-desc boxed">Kaibo Ma</p>
+                                        
+                                        </h2>
+                                        
+                                        <p class="header-desc">engineer, developer.</p>
+                                    
+                                    </div>
+                                
+                                
+                                </div>
+                                
+                                                    
+                            </div>
+                        
+                        
+                        </div> <!-- /col 24 -->
+                
+                    </div> <!-- /row -->
+                
+                </div>
+    
+            </div>
+        
+        </div>
+    
+        <div class="masthead-wrap">
+        
+            <div id="masthead">
+            
+                <div id="hawaii-holder">
+                    
+                    <img src="images/hawaii.jpg">
+                    
+                    
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    </section>
+
+
+
+<section id="hello">
+    
+    
+        <div class="container">
+        
+            <div class="row">
+                
+                <div class="col-md-12">
+    
+    
+                    <article>
+                    
+                    
+                        <h3>Hi.</h3>
+                        
+                        
+                        <p>I'm a Computer Engineer currently atteding University of British Columbia in Vancouver, BC, Canada. I love working with web development and computer security, but also love travelling.</p>
+                    
+                    </article>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    
+    
+    </section>
+
+
+    <div class="breaker">
+    
+        <div class="container">
+        
+            <div class="row">
+                
+                <div class="col-md-12">
+                
+                    <div class="line"></div>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+        
     </div>
+    
+    
+    
+    <section id="what-i-do">
+    
+        <div class="container">
+            
+            <div class="row">
+            
+                <div class="col-md-12">
+                
+                    <article>
+                    
+                        <header>
+                        
+                            <h2>What I can do.</h2>
+                                
+                        </header>
+                        
+                    
+                        <div id="design" class="row">
+                        
+                            <div class="col-md-3 col-md-offset-1">
+                            
+                                    <div class="home-design-info">
+                                    
+                                        <figure>
+                                        
+                                            <img src="images/gradavatar.jpg">
+                                        
+                                        </figure>          
+                                
+                                    </div>
+                                                    
+                            </div> <!-- 4 -->
+                            
+                            <div class="col-md-6">
+                            
+                                <div class="deets">
+                                
+                                    <h3>Innovate.</h3>
+                                    
+                                    <p>As a new graduate, I like to keep things new and innovative. Mostly focusing on different approaches and alternative ways to approach a problem.</p>
+                                
+                                </div>
+                            
+                            </div>
+                            
+                        </div> <!-- /row -->
+                    
+                    
+                        <div id="develop" class="row">
+                        
+                        
+                            <div class="col-md-4 col-md-push-7">
+                                
+                                <div class="home-dev-info">
+                                    
+                                        <figure>
+                                        
+                                            <img src="images/momo.jpg">
+                                        
+                                        </figure>       
+                                
+                                    </div>
+                            
+                            </div> <!-- col -->
+                            
+                            
+                            <div class="col-md-7 col-md-pull-3">
+                            
+                                    <div class="deets">
+                                
+                                    <h3>Develop.</h3>
+                                    
+                                    <p>I'm a developer and engineer that owns a dog. Like him, I never run away from new environments and bugs. Will always find a solution that is efficient and optimal and we both dive head first -- with him barking along the way.    </p>
+                                
+                                </div>
+                                                    
+                            </div> <!-- col -->
+                            
+    
+    
+                            
+                        </div> <!-- /row -->
+                    
+                    
+                    
+                    </article>
+                
+                </div>
+                
+            </div>
+                
+        </div>
+
+    
+    </section>
+    
+    
+    
+<div class="breaker">
+    
+        <div class="container">
+        
+            <div class="row">
+                
+                <div class="col-md-12">
+                
+                    <div class="line"></div>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+<section id="i-can-help">
+    
+        <div class="container">
+        
+            <div class="row">
+            
+                <div class="col-md-12">
+                
+                    <article>
+                    
+                    
+                        <header>
+
+                            <h2>I can help.</h2>
+                                    
+                            <h3>I&rsquo;m will be available for work starting May 2017.</h3>
+                                
+                        </header>
+                        
+                        <p>If you think I am a good fit, or just want to say hi, come and fire me an email. I don&rsquo;t bite! :)</p>
+                        
+                        <p class="btn-hldr">
+                        
+                            <a href="@gmail.com||kaiboma" class="main-btn email-lnk"> <i class="fa fa-envelope-o" style="font-size:24px" ></i>  message me </a>
+                        
+                        </p>
+ 
+                    
+                    </article>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    
+    </section>
+
+
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="footer-list">
+                        <li><a href="http://github.com/kiddo122">github</a></li>
+                        <li><a href="https://linkedin.com/in/kaiboma">linkedin</a></li>
+                        <li><a href="https://facebook.com/kaiboma">facebook</a></li>
+                        <li><a href="@gmail.com||kaiboma" class="email-lnk">hire me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>© 2017 <a href="http://kiddo122.github.io">Kaibo Ma</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+</footer>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/product.cart.js"></script> 
+    <script src="js/index.js"></script>
+
+</body>
 </html>
