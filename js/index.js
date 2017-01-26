@@ -8,8 +8,6 @@ $(window).scroll(function () {
     if (currentScroll > headerOrgOffset) {
         if (currentScroll > previousScroll) {
             $('#home-top').slideUp();
-        } else {
-            $('#home-top').slideDown();
         }
     } else {
             $('#home-top').slideDown();
@@ -21,7 +19,7 @@ $(function() {
   $('#main').smoothState();
 });
 
-(function ($) {
+/*(function ($) {
 
     'use strict';
 
@@ -67,4 +65,4 @@ $(function() {
 
     });
 
-}(jQuery));
+}(jQuery));*/
