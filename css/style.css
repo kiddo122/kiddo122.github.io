@@ -15,3 +15,9 @@
     width: 80%;
     height: auto;
 }
+#work{
+    display: none;
+}
+#projects{
+    display: none;
+}
