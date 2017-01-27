@@ -126,7 +126,12 @@
 #ubc ul{
     color: white;
     font-family: "Helvetica Neue", sans-serif;
-
+}
+#ubc-fountain{
+    width: 800px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 @-webkit-keyframes fadeIn {
