@@ -30,6 +30,23 @@
     height: auto;
 }
 
+#giticon{
+    width: 15%;
+    height: auto;
+}
+#linkedinicon{
+    width: 15%;
+    height: auto;
+}
+#fbicon{
+    width: 15%;
+    height: auto;
+}
+#avticon{
+    width: 15%;
+    height: auto;
+}
+
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
