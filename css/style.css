@@ -7,6 +7,9 @@
   border: 2px solid green ;
 }
 
+#head-slider{
+    color: #8bbdeb;
+}
 #beach-holder {
     max-width: 100%;
     height: auto;
@@ -46,7 +49,26 @@
     width: 15%;
     height: auto;
 }
+#clevest{
+    background-color: #8bbdeb;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+#intro{
+    background-color: #fff;
+}
+#clevest-logo{
 
+    padding-bottom: 20px
+    width: 150%
+    height: auto;
+}
+#clevest-btn{
+    background-color: #3BA6F0;
+}
+#clevest-btn:hover{
+    background-color: #0092F8;
+}
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
