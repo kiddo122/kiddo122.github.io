@@ -52,9 +52,9 @@
                                 
                                     <ul id = "view-list" class="nav-list transistion">
                                     
-                                            <li><a name="about" class="view-list-item" href="#">About</a></li>
-                                            <li><a name="work" class="view-list-item" href="work.html">Work</a></li>
-                                            <li><a name="projects" class="view-list-item" href="projects.html">Projects</a></li>
+                                            <li><a name="about" class="view-list-item" data-target="-1" href="#">About</a></li>
+                                            <li><a name="work" class="view-list-item" data-target="0" href="work.html">Work</a></li>
+                                            <li><a name="projects" class="view-list-item" data-target="1" href="projects.html">Projects</a></li>
                                                                                             
                                     </ul>
                                 
@@ -69,7 +69,7 @@
 
                 </header>
         </section>
-        <div class="sceneElement" data-viewport="0">
+        <div class="sceneElement" data-viewport="-1">
 
             <section>
                 <div class="masthead-wrap">
@@ -332,12 +332,13 @@
             
             </section>
         </div>
+    </div>
         <footer>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="footer-list">
-                                <li><a href="http://github.com/kiddo122">github</a></li>
+                                <li><a href="http://github.com/kiddo122" >github</a></li>
                                 <li><a href="https://linkedin.com/in/kaiboma">linkedin</a></li>
                                 <li><a href="https://facebook.com/kaiboma">facebook</a></li>
                                 <li><a href="@gmail.com||kaiboma" class="email-lnk">hire me</a></li>
@@ -351,7 +352,7 @@
                     </div>
                 </div>
         </footer>
-    </div>
+   
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>

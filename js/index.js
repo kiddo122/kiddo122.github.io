@@ -15,11 +15,7 @@ $(window).scroll(function () {
     previousScroll = currentScroll;
 });
 
-$(function() {
-  $('#main').smoothState();
-});
-
-/*(function ($) {
+(function ($) {
 
     'use strict';
 
@@ -65,4 +61,4 @@ $(function() {
 
     });
 
-}(jQuery));*/
+}(jQuery));
