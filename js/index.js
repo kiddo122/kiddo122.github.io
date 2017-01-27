@@ -15,6 +15,24 @@ $(window).scroll(function () {
     previousScroll = currentScroll;
 });
 
+$(function()
+  {
+     $("#clevest-btn").click(function()
+         {
+            $("#clevest-info").slideToggle(1000);
+            return false;
+         }); 
+});
+
+$(function()
+  {
+     $("#ubc-btn").click(function()
+         {
+            $("#ubc-info").slideToggle(1000);
+            return false;
+         }); 
+});
+
 (function ($) {
 
     'use strict';

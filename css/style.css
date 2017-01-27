@@ -54,6 +54,22 @@
     padding-bottom: 100px;
     padding-top: 100px;
 }
+#clevest h2{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Arial";
+}
+#clevest p{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+
+}
+#clevest ul{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+
+}
 #intro{
     background-color: #fff;
 }
@@ -69,6 +85,50 @@
 #clevest-btn:hover{
     background-color: #0092F8;
 }
+#clevest-devices{
+    width: 20%
+    height: 20%;
+}
+#clevest-info{
+    display: none;
+}
+
+.ubc-logo{
+    width: 225px;
+    height: auto;
+}
+#ubc-btn{
+    background-color: #7B2AFF;
+}
+#ubc-btn:hover{
+    background-color: #711DFB;
+}
+#ubc-info{
+    display: none;
+}
+
+#ubc{
+    background-color: #545454;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+#ubc h2{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Arial";
+}
+#ubc p{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+
+}
+#ubc ul{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+
+}
+
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
