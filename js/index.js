@@ -1,7 +1,6 @@
 (function ($) {
 
     'use strict';
-
     $(document).ready(function () { 
         $("#clevest-btn").click(function(e)
          {
@@ -30,15 +29,8 @@
          });
         $("#starbucks-btn").click(function(e)
          {
-            e.preventDefault();
+            e.preventDefault(); 
             $("#starbucks-info").stop().slideToggle(1000);
-            return false;
-         });
-
-        $("#portfolio").click(function(e)
-         {
-            e.preventDefault();
-            $("#portfolio-modal").show();
             return false;
          });
 
@@ -47,6 +39,7 @@
         var $body = $('body'),
             $main = $('#main'),
             $site = $('html, body'),
+            $loading =$('#loading'),
             transition = 'fade',
             smoothState;
 
@@ -66,7 +59,7 @@
                 }
             },
             onStart: {
-                duration: 400,
+                duration: 1000,
                 render: function (url, $container) {
                     $main.attr('data-transition', transition);
                     $main.addClass('is-exiting');
@@ -109,13 +102,7 @@
                         $("#starbucks-info").stop().slideToggle(1000);
                         return false;
                      });
-                     $("#portfolio").click(function(e)
-                     {
-                        e.preventDefault();
-                        $("#portfolio-modal").show();
-                        return false;
-                     });
-
+                    
                 }
 
 
@@ -142,3 +129,4 @@ $(window).scroll(function () {
     }
     previousScroll = currentScroll;
 });
+

@@ -122,17 +122,77 @@
             <section id="projects">
                 <div class="container">
                     <div class="col-md-12">
-                            <div id="portfolio" class="project-box" href="#">
-                                <img id="avt-logo" src="images/avatar-icon.png">
+                            <div id="portfolio" class="project-box" onclick="location.href = 'https://github.com/kiddo122/kiddo122.github.io';">
+                                <div class="col-md-4">
+                                    <img id="avt-logo" src="images/avatar-icon.png">
+                                </div>
+                                <div class="col-md-offset-4">
+                                    <p>Online Resume Portfolio</p>
+                                    <ul>
+                                            <li>Created a Web application from scratch for my online portfolio and resume</li>
+                                            <li>Showcases my skills and knowledge along with newly learned skills while developing the web app.  </li>
+                                            <li>Web App uses only html, css, js, jquery, and a jquery animation plugin called smoothstate.js</li>
+                                            <li>Created own javascript functions that allow annimations throughout the webapp for interactibitity</li>
+                                        </ul>
+                                </div>
+                            
+                            
+                              
                             </div>
-                            <div id="webapp" class="project-box">
-                                <img class="img-circle" id="book-logo" src="images/bookstore.png">
+                            <div id="webapp" class="project-box" onclick="location.href = 'https://github.com/kiddo122/BookstoreWebapp';">
+                                <img class="img-rounded" id="book-logo" src="images/bookstore.png">
+                                <div class="col-md-offset-1">
+                                    <p>Bookstore Simulation WebApp</p>
+                                        <ul>
+                                            <li>Partnered with a friend to create a web application to a simulated bookstore website with the ability to check out items</li>
+                                            <li>Designed a simple RESTful web API along with ajax calls for communication between the front end and mongoDB for the backend database </li>
+                                            <li>Used css, html, javascript, and jquery to create a presentable and responsive end user GUI</li>
+                                            <li>Called AJAX calls and handlers to checkout and fetch products from back end</li>
+                                        </ul>
+                                </div>    
                             </div>
-                            <div id="pacman" class="project-box">
+                            <div id="vpnchat" class="project-box" onclick="location.href = 'https://github.com/kiddo122/Computer-Security-Projects';">
+                                <div class="col-md-4">
+                                    <img class="img-rounded" id="vpnchat-logo" src="images/vpnchat.png">
+                                </div>
+                                <div class="col-md-offset-4">
+                                    <p>Secure Private Chat Messenger</p>
+                                    <ul>
+                                            <li>Worked in a group of 4 to create a VPN messenger chat client that connects over a secure channel with mutual authentication</li>
+                                            <li>Used Java’s crypto library and byte private keys to establish the public keys using Diffie-Hellman </li>
+                                            <li>Followed current standards and modern practices such as AES and SHA256</li>
+                                            <li>Used AES-GCM,IV, and nonce to create forward and backward secrecy and prevent replay attacks</li>
+                                        </ul>
+                                </div>
+                                
                             </div>
-                            <div id="reverse" class="project-box">
+                            <div id="reverse" class="project-box" onclick="location.href = 'https://github.com/kiddo122/Computer-Security-Projects';">
+                                <img class="img-rounded" id="reverse-logo" src="images/reverse.png">
+                                <div class="col-md-offset-1">
+                                    <p>.exe Decompiling and Patching</p>
+                                    <ul>
+                                            <li>Using John the Ripper and IDA, I was successfully able to retrieve the password from a given application</li>
+                                            <li>Used IDA and read x86 assembly instructions to find the SHA1 password inside the program. </li>
+                                            <li>Ran John the Ripper to do a brute force search of the hashed password to find the original password.</li>
+                                            <li>Then created a small python script that patches the binary file to access any predefined password that the user indicates</li>
+                                        </ul>
+                                </div>
                             </div>
-                            <div id="vpnchat" class="project-box">
+                            <div id="pacman" class="project-box" onclick="location.href = 'https://github.com/kiddo122/SoftwareTesting';">
+                                <div class="col-md-5">
+                                    <img class="img-rounded" id="pacman-logo" src="images/pacman.png">
+                                </div>
+                                <div class="col-md-offset-5">
+                                    <p>Undoable Pacman and Test Suites</p>
+                                    <ul>
+                                            <li>Extended the original Framework Pacman to override original functions to implement and undo feature to the game</li>
+                                            <li>Utilized Apache Maven to compile our java program along with EclEmma to test code coverage </li>
+                                            <li>Programmed using closed principle where we extended an original source code to create new overridden functions</li>
+                                            <li>After implementing our undo feature we had to refractor and get rid of smells in our code and also tested for mutants</li>
+                                        </ul>
+
+                                </div>
+                
                             </div>
                     </div>
                 </div>
@@ -152,7 +212,7 @@
 
                                     <h2>I can help.</h2>
                                             
-                                    <h3>I&rsquo;m available for work starting May 2017.</h3>
+                                    <h3>I&rsquo;m available for work starting May 2017.</h3>    
                                         
                                 </header>
                                 
@@ -175,7 +235,6 @@
             
             
             </section>
-        
         </div>
     </div>
         
@@ -198,17 +257,6 @@
                     </div>
                 </div>
         </footer>
-        <!-- The Modal -->
-<div id="portfolio-modal" class="modal ">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-        <img id="portfolio-pic" src="images/portfolio-pic.png">
-        <p>Portfolio</p>
-  </div>
-
-</div>
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
