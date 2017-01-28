@@ -59,7 +59,7 @@
                 }
             },
             onStart: {
-                duration: 1000,
+                duration: 500,
                 render: function (url, $container) {
                     $main.attr('data-transition', transition);
                     $main.addClass('is-exiting');
