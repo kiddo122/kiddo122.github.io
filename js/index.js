@@ -35,6 +35,13 @@
             return false;
          });
 
+        $("#portfolio").click(function(e)
+         {
+            e.preventDefault();
+            $("#portfolio-modal").show();
+            return false;
+         });
+
 
         // Init here.
         var $body = $('body'),
@@ -102,7 +109,12 @@
                         $("#starbucks-info").stop().slideToggle(1000);
                         return false;
                      });
-
+                     $("#portfolio").click(function(e)
+                     {
+                        e.preventDefault();
+                        $("#portfolio-modal").show();
+                        return false;
+                     });
 
                 }
 

@@ -273,6 +273,11 @@
     height: auto;
 }
 
+#portfolio-pic{
+    width: 30%;
+    height: auto;
+}
+
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
