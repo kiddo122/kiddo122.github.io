@@ -1,7 +1,13 @@
 (function ($) {
+    $(window).load(function() {
+        $("#loading").fadeOut("slow");x      
+        // Animate loader off screen
+
+    });
 
     'use strict';
     $(document).ready(function () { 
+    
         $("#clevest-btn").click(function(e)
          {
             e.preventDefault();
