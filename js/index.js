@@ -28,6 +28,12 @@
             $("#rallyteam-info").stop().slideToggle(1000);
             return false;
          });
+        $("#starbucks-btn").click(function(e)
+         {
+            e.preventDefault();
+            $("#starbucks-info").stop().slideToggle(1000);
+            return false;
+         });
 
 
         // Init here.
@@ -90,6 +96,13 @@
                         $("#rallyteam-info").stop().slideToggle(1000);
                         return false;
                      });
+                     $("#starbucks-btn").click(function(e)
+                     {
+                        e.preventDefault();
+                        $("#starbucks-info").stop().slideToggle(1000);
+                        return false;
+                     });
+
 
                 }
 
