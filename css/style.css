@@ -162,6 +162,12 @@ body{background:#eee;}
     background-color: #bac4c1;
 }
 
+#hawaii-holder{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 #head-slider{
     color: #8bbdeb;
 }
