@@ -6,6 +6,21 @@
 .boxed {
   border: 2px solid green ;
 }
+.project-box{
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    -webkit-box-shadow: 0 3px 3px 2px #C2C2C2;
+    box-shadow: 0 3px 3px 2px #C2C2C2;
+    width: 275px;
+    height: 275px;
+    margin: 10px;  
+    vertical-align: top;
+}
+.project-box:hover{
+    background-color: #EEEEEE;
+}
 
 #head-slider{
     color: #8bbdeb;
@@ -16,20 +31,6 @@
 }
 #avatar{
     width: 80%;
-    height: auto;
-}
-#work{
-    display: none;
-}
-#projects{
-    display: none;
-}
-
-#construction{
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    width: 50%;
     height: auto;
 }
 
@@ -108,7 +109,7 @@
 }
 
 #ubc{
-    background-color: #545454;
+    background-color: #414A8C;
     padding-bottom: 100px;
     padding-top: 100px;
 }
@@ -132,6 +133,107 @@
     height: auto;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+.mojio-logo{
+    width: 225px;
+    height: auto;
+}
+#mojio-btn{
+    background-color: #F96060;
+}
+#mojio-btn:hover{
+    background-color: #FB4A4A;;
+}
+#mojio-info{
+    display: none;
+}
+
+#mojio{
+    background-color: #666;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+#mojio h2{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Arial";
+}
+#mojio p{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+
+}
+#mojio ul{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+#mojio-pic{ 
+    width: 800px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.rallyteam-logo{
+    width: 225px;
+    height: auto;
+}
+#rallyteam-btn{
+    background-color: #f0f0f0;
+}
+#rallyteam-btn:hover{
+    background-color: #d7d7d7;;
+}
+#rallyteam-info{
+    display: none;
+}
+
+#rallyteam{
+    background-color: #1a81e0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+#rallyteam h2{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Arial";
+}
+#rallyteam p{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+
+}
+#rallyteam ul{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+#rallyteam-pic{ 
+    width: 800px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#avt-logo{
+    position: relative;
+    margin:0 auto; 
+    width: auto;
+    height: 100%;
+}
+#book-logo{
+    position: relative;
+    margin:0 auto; 
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+#rally-logo{
+    position: relative;
+    margin:0 auto; 
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
 }
 
 @-webkit-keyframes fadeIn {

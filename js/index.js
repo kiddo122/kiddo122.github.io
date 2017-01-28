@@ -16,6 +16,18 @@
             $("#ubc-info").stop().slideToggle(1000);
             return false;
          });
+        $("#mojio-btn").click(function(e)
+         {
+            e.preventDefault();
+            $("#mojio-info").stop().slideToggle(1000);
+            return false;
+         });
+        $("#rallyteam-btn").click(function(e)
+         {
+            e.preventDefault();
+            $("#rallyteam-info").stop().slideToggle(1000);
+            return false;
+         });
 
 
         // Init here.
@@ -64,6 +76,18 @@
                      {
                         e.preventDefault();
                         $("#ubc-info").stop().slideToggle(1000);
+                        return false;
+                     });
+                    $("#mojio-btn").click(function(e)
+                     {
+                        e.preventDefault();
+                        $("#mojio-info").stop().slideToggle(1000);
+                        return false;
+                     });
+                    $("#rallyteam-btn").click(function(e)
+                     {
+                        e.preventDefault();
+                        $("#rallyteam-info").stop().slideToggle(1000);
                         return false;
                      });
 
