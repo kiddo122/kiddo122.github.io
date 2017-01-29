@@ -293,6 +293,9 @@ body{background:#eee;}
 #mojio-info{
     display: none;
 }
+#mojio-source{
+    padding-top: 40px;
+}
 
 #mojio{
     background-color: #666;
