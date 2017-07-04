@@ -1,12 +1,18 @@
 (function ($) {
     $(window).load(function() {
-        $("#loading").fadeOut("slow");x      
+        $("#loading").fadeOut("slow");      
         // Animate loader off screen
 
     });
 
     'use strict';
     $(document).ready(function () { 
+        $("#apple-btn").click(function(e)
+         {
+            e.preventDefault();
+            $("#apple-info").stop().slideToggle(1000);
+            return false;
+         }); 
     
         $("#clevest-btn").click(function(e)
          {
@@ -77,6 +83,12 @@
                 render: function ($container, $newContent) {
                     $container.html($newContent);
                     $container.removeClass('is-exiting');
+                    $("#apple-btn").click(function(e)
+                     {
+                        e.preventDefault();
+                        $("#apple-info").stop().slideToggle(1000);
+                        return false;
+                     }); 
                     $("#clevest-btn").click(function(e)
                      {
                         e.preventDefault();
